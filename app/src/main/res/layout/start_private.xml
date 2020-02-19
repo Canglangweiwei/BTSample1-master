@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <android.support.v7.widget.AppCompatButton
+    android:id="@+id/btnTestBT"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:text="@string/testprinterbt2" />
+
+  <android.support.v7.widget.AppCompatButton
+    android:id="@+id/btnTestBLE"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:text="@string/testprinterbt4"
+    android:visibility="gone" />
+
+  <android.support.v7.widget.AppCompatButton
+    android:id="@+id/btnTestNET"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:text="@string/testprinternet"
+    android:visibility="gone" />
+
+  <android.support.v7.widget.AppCompatButton
+    android:id="@+id/btnTestUSB"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:text="@string/testprinterusb"
+    android:visibility="gone" />
+
+  <android.support.v7.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <TextView
+      android:id="@+id/textViewTicketType"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:text="@string/tickettype" />
+
+    <RadioGroup
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+      <android.support.v7.widget.AppCompatRadioButton
+        android:id="@+id/radioButtonTicket58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:checked="true"
+        android:text="@string/tickettype58mm" />
+
+      <android.support.v7.widget.AppCompatRadioButton
+        android:id="@+id/radioButtonTicket80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/tickettype80mm" />
+    </RadioGroup>
+
+    <TextView
+      android:id="@+id/textViewHardware"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/hardwarefunction" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+      <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/checkBoxCutter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/cutter" />
+
+      <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/checkBoxDrawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/drawer" />
+
+      <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/checkBoxBeeper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:checked="true"
+        android:text="@string/beeper" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <TextView
+      android:id="@+id/textViewPrintCount"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/printcount" />
+
+    <RadioGroup
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+      <android.support.v7.widget.AppCompatRadioButton
+        android:id="@+id/radioButtonPrintCount1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:checked="true"
+        android:text="@string/count1" />
+
+      <android.support.v7.widget.AppCompatRadioButton
+        android:id="@+id/radioButtonPrintCount10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/count10" />
+
+      <android.support.v7.widget.AppCompatRadioButton
+        android:id="@+id/radioButtonPrintCount100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/count100" />
+
+      <android.support.v7.widget.AppCompatRadioButton
+        android:id="@+id/radioButtonPrintCount1000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/count1000" />
+    </RadioGroup>
+
+    <TextView
+      android:id="@+id/textViewPrintContent"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/printcontent" />
+
+    <RadioGroup
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+      <android.support.v7.widget.AppCompatRadioButton
+        android:id="@+id/radioButtonPrintContentS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:checked="true"
+        android:text="@string/small" />
+
+      <android.support.v7.widget.AppCompatRadioButton
+        android:id="@+id/radioButtonPrintContentM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/middle" />
+
+      <android.support.v7.widget.AppCompatRadioButton
+        android:id="@+id/radioButtonPrintContentL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/large" />
+    </RadioGroup>
+
+    <android.support.v7.widget.LinearLayoutCompat
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+      <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/checkBoxAutoPrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/autoprint" />
+
+      <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/checkBoxPictureCompress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bitmapcompress" />
+
+      <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/checkBoxCheckReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkreturn" />
+    </android.support.v7.widget.LinearLayoutCompat>
+  </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v7.widget.LinearLayoutCompat>

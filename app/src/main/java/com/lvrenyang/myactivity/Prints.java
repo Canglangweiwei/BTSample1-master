@@ -17,7 +17,7 @@ import com.lvrenyang.io.Pos;
 
 public class Prints {
 
-  static boolean PrintTicket(Context ctx, Pos pos, int nPrintWidth,
+  public static boolean PrintTicket(Context ctx, Pos pos, int nPrintWidth,
                              boolean bCutter, boolean bDrawer,
                              boolean bBeeper, int nCount, int nPrintContent,
                              int nCompressMethod, boolean bCheckReturn) {

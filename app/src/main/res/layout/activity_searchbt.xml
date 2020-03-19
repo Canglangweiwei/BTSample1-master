@@ -1,62 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
+  android:orientation="vertical"
   android:padding="10dp">
 
-  <ProgressBar
-    android:id="@+id/progressBarSearchStatus"
-    style="?android:attr/progressBarStyleHorizontal"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentStart="true"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentTop="true"
-    android:layout_alignParentEnd="true"
-    android:layout_alignParentRight="true" />
-
   <android.support.v7.widget.AppCompatButton
-    android:id="@+id/buttonSearch"
+    android:id="@+id/btn_search"
     android:layout_width="match_parent"
     android:layout_height="80dp"
-    android:layout_below="@+id/progressBarSearchStatus"
-    android:layout_alignParentStart="true"
-    android:layout_alignParentLeft="true"
     android:layout_marginTop="10dp"
-    android:text="Search" />
-
-  <ScrollView
-    android:id="@+id/scrollView1"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_above="@+id/buttonDisconnect"
-    android:layout_below="@+id/buttonSearch"
-    android:layout_alignParentLeft="true">
-
-    <LinearLayout
-      android:id="@+id/linearlayoutdevices"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:orientation="vertical" />
-  </ScrollView>
+    android:text="搜索蓝牙打印机" />
 
   <android.support.v7.widget.AppCompatButton
-    android:id="@+id/buttonDisconnect"
+    android:id="@+id/btn_choice"
     android:layout_width="match_parent"
     android:layout_height="80dp"
-    android:layout_above="@+id/buttonPrint"
-    android:layout_alignParentStart="true"
-    android:layout_alignParentLeft="true"
     android:layout_marginTop="10dp"
-    android:text="Disconnect" />
+    android:text="选择打印机" />
 
   <android.support.v7.widget.AppCompatButton
-    android:id="@+id/buttonPrint"
+    android:id="@+id/btn_disconnect"
     android:layout_width="match_parent"
     android:layout_height="80dp"
-    android:layout_alignParentStart="true"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentBottom="true"
     android:layout_marginTop="10dp"
-    android:text="Print" />
-</RelativeLayout>
+    android:text="断开连接" />
+
+  <android.support.v7.widget.AppCompatButton
+    android:id="@+id/btn_print"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginTop="10dp"
+    android:text="打印" />
+</android.support.v7.widget.LinearLayoutCompat>

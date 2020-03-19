@@ -129,8 +129,6 @@ public class BTPrinterManager implements IOCallBack {
       if (ADAPTER.isDiscovering()) {
         ADAPTER.cancelDiscovery();
       }
-      // 清空原设备列表
-      devices.clear();
       // 开始新的搜索
       ADAPTER.startDiscovery();
     }
@@ -155,6 +153,8 @@ public class BTPrinterManager implements IOCallBack {
             break;
           case BluetoothAdapter.ACTION_DISCOVERY_STARTED:// 开始搜索
             Log.d(TAG, "开始搜索");
+            // 清空原设备列表
+            devices.clear();
             break;
           case BluetoothAdapter.ACTION_DISCOVERY_FINISHED:// 搜索结束
             Log.d(TAG, "搜索结束");
@@ -340,7 +340,6 @@ public class BTPrinterManager implements IOCallBack {
     @Override
     public void run() {
       final boolean bPrintResult = Prints.PrintTicket(AppHolder.newInstance(), pos, AppStart.nPrintWidth, AppStart.bCutter, AppStart.bDrawer, AppStart.bBeeper, AppStart.nPrintCount, AppStart.nPrintContent, AppStart.nCompressMethod, AppStart.bCheckReturn);
-      final boolean bIsOpened = pos.GetIO().IsOpened();
       handler.sendEmptyMessage(bPrintResult ? PRINT_SUCCESS : PRINT_FAILED);
     }
   }

@@ -9,6 +9,7 @@ import android.content.IntentFilter;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -45,7 +46,7 @@ public class SearchBTActivity1 extends AppCompatActivity implements OnClickListe
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_searchbt);
+    setContentView(R.layout.activity_searchbt1);
 
     mActivity = this;
 
@@ -116,6 +117,7 @@ public class SearchBTActivity1 extends AppCompatActivity implements OnClickListe
         }
         switch (action) {
           case BluetoothDevice.ACTION_FOUND:// 搜索到蓝牙设备
+            Log.d("SearchBTActivity1", "搜索到了设备+++++++++++++++++++++++");
             if (device == null) {
               return;
             }
@@ -123,9 +125,11 @@ public class SearchBTActivity1 extends AppCompatActivity implements OnClickListe
             break;
           case BluetoothAdapter.ACTION_DISCOVERY_STARTED:// 开始搜索
             progressBarSearchStatus.setIndeterminate(true);
+            Log.d("SearchBTActivity1", "开始搜索了");
             break;
           case BluetoothAdapter.ACTION_DISCOVERY_FINISHED:// 搜索结束
             progressBarSearchStatus.setIndeterminate(false);
+            Log.d("SearchBTActivity1", "搜索结束了");
             break;
           default:
             break;

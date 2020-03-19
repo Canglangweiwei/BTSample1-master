@@ -92,6 +92,12 @@
       tools:ignore="LockedOrientationActivity" />
 
     <activity
+      android:name="com.lvrenyang.myactivity.SearchBTActivity1"
+      android:launchMode="singleTop"
+      android:screenOrientation="portrait"
+      tools:ignore="LockedOrientationActivity" />
+
+    <activity
       android:name="com.lvrenyang.myactivity.SearchBLEActivity"
       android:launchMode="singleTop"
       android:screenOrientation="portrait"

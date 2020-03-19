@@ -112,7 +112,7 @@ public class AppStart extends AppCompatActivity implements OnClickListener {
     switch (v.getId()) {
       case R.id.btnTestBT:// 蓝牙2.0测试
       {
-        Intent intent = new Intent(AppStart.this, SearchBTActivity.class);
+        Intent intent = new Intent(AppStart.this, SearchBTActivity1.class);
         startActivity(intent);
       }
       break;
